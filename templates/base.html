@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}ComicCraft — AI Comic Story Creator{% endblock %}</title>
+  <meta name="description" content="Turn simple story ideas into full 5-panel illustrated comics with AI. Generates storylines, characters, dialogues, artwork, and downloadable PDFs." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💥</text></svg>">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <!-- GLOBAL NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-brand">
+        <div class="brand-icon-box">💬</div>
+        <div class="brand-text">COMIC<span>CRAFT</span></div>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#workspace" class="nav-link">Create Comic</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#gallery" class="nav-link">Sample Comics</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="engine-status-pill" title="AI Generation Studio Operational">
+          <span class="status-dot"></span>
+          <span>{% if is_live_gemini %}Gemini AI Active{% else %}Studio Fallback Active{% endif %}</span>
+        </div>
+        <a href="#workspace" class="btn btn-primary" id="btn-nav-create">Start Creating</a>
+        <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY CONTENT -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="brand-text" style="font-size: 2.2rem; margin-bottom: 8px;">COMIC<span>CRAFT</span></div>
+          <p class="footer-tagline">Turn imagination into illustrated stories. Create, customize, and export original multi-panel comics powered by AI.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#workspace">Create Comic</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Studio Features</a></li>
+            <li><a href="#gallery">Made With ComicCraft</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Architecture & Tech</h4>
+          <ul>
+            <li><a href="#about">FastAPI Backend</a></li>
+            <li><a href="#about">Gemini AI Models</a></li>
+            <li><a href="#about">Stable Diffusion Art</a></li>
+            <li><a href="#about">FPDF Engine</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>&copy; 2026 ComicCraft AI Studio. All rights reserved.</div>
+        <div style="font-weight: 700; color: var(--comic-yellow);">Built with AI &bull; Designed for Storytellers</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="/static/js/confetti.js"></script>
+  <script src="/static/js/app.js"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

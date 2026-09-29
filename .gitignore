@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Temporary generated PDFs and images
+generated_pdfs/*.pdf
+generated_pdfs/temp_img/
+!generated_pdfs/.gitkeep
+
+# IDEs & System
+.vscode/
+.idea/
+*.swp
+*.DS_Store
+Thumbs.db

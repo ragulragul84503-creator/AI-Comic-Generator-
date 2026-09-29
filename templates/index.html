@@ -1,0 +1,696 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ==========================================
+     HERO SECTION
+     ========================================== -->
+<section class="hero-section">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-text-wrap">
+      <div class="hero-badge-wrap">
+        <span class="badge badge-yellow">✨ AI-POWERED 5-PANEL STORY STUDIO</span>
+      </div>
+
+      <h1 class="hero-title">
+        Turn Your Ideas <br />
+        <span class="highlight">Into Comics</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Create original AI-powered comic stories, characters, dialogue, and illustrations from a single idea. Fast, beautiful, and ready for PDF export.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#workspace" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 30px;">
+          <span>✨</span> Create Your Comic
+        </a>
+        <a href="#how-it-works" class="btn btn-secondary">
+          See How It Works
+        </a>
+      </div>
+
+      <!-- Pipeline Bar -->
+      <div class="hero-pipeline-strip">
+        <div class="pipeline-step">💡 Idea</div>
+        <span class="pipeline-arrow">&rarr;</span>
+        <div class="pipeline-step">📝 5-Panel Outline</div>
+        <span class="pipeline-arrow">&rarr;</span>
+        <div class="pipeline-step">💬 Dialogue</div>
+        <span class="pipeline-arrow">&rarr;</span>
+        <div class="pipeline-step">🎨 AI Artwork</div>
+        <span class="pipeline-arrow">&rarr;</span>
+        <div class="pipeline-step">📄 Comic PDF</div>
+      </div>
+    </div>
+
+    <!-- Visually Impressive Sample Comic Showcase Composition -->
+    <div class="hero-comic-showcase">
+      <div class="comic-pow-badge">WHAM!</div>
+      
+      <div class="showcase-wrapper">
+        <div class="showcase-header">
+          <span class="issue-tag">ISSUE #01 &bull; SPECIAL EDITION</span>
+          <span class="badge badge-blue">STUDIO SHOWCASE</span>
+        </div>
+
+        <div class="showcase-panels-grid">
+          <!-- Panel 1 -->
+          <div class="sample-mini-panel">
+            <div class="mini-panel-header">PANEL 01 &bull; THE ARRIVAL</div>
+            <div class="mini-panel-img-wrap">
+              <svg viewBox="0 0 300 160" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="hero-p1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1E1B4B" />
+                    <stop offset="100%" stop-color="#4338CA" />
+                  </linearGradient>
+                </defs>
+                <rect width="300" height="160" fill="url(#hero-p1)"/>
+                <ellipse cx="220" cy="50" rx="40" ry="40" fill="#FFE600" opacity="0.8"/>
+                <polygon points="0,160 80,90 180,130 300,70 300,160" fill="#0F172A"/>
+                <!-- Hero silhouette -->
+                <circle cx="90" cy="100" r="10" fill="#FFF"/>
+                <polygon points="85,110 95,110 100,140 80,140" fill="#000"/>
+              </svg>
+              <div class="mini-speech-bubble">LEO: "The ancient gate is real!"</div>
+            </div>
+            <div class="mini-caption-box">"Deep inside the twilight grove, the stones began to hum..."</div>
+          </div>
+
+          <!-- Panel 2 -->
+          <div class="sample-mini-panel">
+            <div class="mini-panel-header">PANEL 02 &bull; THE RIFT</div>
+            <div class="mini-panel-img-wrap">
+              <svg viewBox="0 0 300 160" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="hero-p2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#831843" />
+                    <stop offset="100%" stop-color="#F43F5E" />
+                  </linearGradient>
+                </defs>
+                <rect width="300" height="160" fill="url(#hero-p2)"/>
+                <!-- Energy portal -->
+                <ellipse cx="150" cy="80" rx="50" ry="70" fill="none" stroke="#FFE600" stroke-width="4" stroke-dasharray="6 3"/>
+                <circle cx="150" cy="80" r="30" fill="#FFF" opacity="0.9"/>
+                <!-- Speed lines -->
+                <line x1="10" y1="20" x2="110" y2="70" stroke="#FFF" stroke-width="1.5" opacity="0.4"/>
+                <line x1="290" y1="20" x2="190" y2="70" stroke="#FFF" stroke-width="1.5" opacity="0.4"/>
+              </svg>
+              <div class="mini-speech-bubble">"Hold on! It's pulling us in!"</div>
+            </div>
+            <div class="mini-caption-box">"A blinding flash ripped through the calm afternoon sky."</div>
+          </div>
+
+          <!-- Panel 3 (Full width bottom panel) -->
+          <div class="sample-mini-panel span-2">
+            <div class="mini-panel-header">PANEL 03 &bull; BEYOND THE HORIZON</div>
+            <div class="mini-panel-img-wrap">
+              <svg viewBox="0 0 600 160" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="hero-p3" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#022C22" />
+                    <stop offset="50%" stop-color="#065F46" />
+                    <stop offset="100%" stop-color="#10B981" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="160" fill="url(#hero-p3)"/>
+                <!-- Celestial floating islands -->
+                <ellipse cx="160" cy="110" rx="90" ry="25" fill="#064E3B" stroke="#34D399" stroke-width="2"/>
+                <ellipse cx="440" cy="90" rx="110" ry="30" fill="#064E3B" stroke="#34D399" stroke-width="2"/>
+                <circle cx="300" cy="50" r="28" fill="#FFE600" opacity="0.9"/>
+                <!-- Hero on edge -->
+                <polygon points="175,90 185,90 188,112 172,112" fill="#000"/>
+                <circle cx="180" cy="85" r="5" fill="#FFF"/>
+              </svg>
+              <div class="mini-speech-bubble" style="right: 20px; left: auto;">"We're walking among the stars now!"</div>
+            </div>
+            <div class="mini-caption-box">"Leo stood atop the floating islands of tomorrow, ready for whatever lay ahead."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     CREATE COMIC WORKSPACE SECTION
+     ========================================== -->
+<section class="workspace-section" id="workspace">
+  <div class="container">
+    <div class="workspace-header">
+      <span class="badge badge-yellow" style="margin-bottom: 12px;">COMIC GENERATOR WORKSPACE</span>
+      <h2>Create Your Comic</h2>
+      <p>Give your story a few details. ComicCraft will turn them into a complete 5-panel comic with storyline, dialogue, and artwork.</p>
+    </div>
+
+    <div class="workspace-layout">
+      <!-- LEFT: Story Configuration Form -->
+      <div class="comic-form-card">
+        <form id="comic-craft-form" novalidate>
+          
+          <!-- 1. Story Prompt -->
+          <div class="form-group">
+            <div class="form-label-row">
+              <label for="story_prompt" class="form-label">
+                Story Prompt <span class="req">*</span>
+              </label>
+              <span class="char-counter" id="char-counter">0 / 1000</span>
+            </div>
+            <textarea
+              id="story_prompt"
+              name="story_prompt"
+              class="form-control"
+              placeholder="Example: A brave fox discovers a mysterious glowing portal deep inside an enchanted forest..."
+              maxlength="1000"
+              required
+            ></textarea>
+            <div class="form-error-msg">Please enter a story prompt.</div>
+          </div>
+
+          <!-- 2. Main Character & Setting -->
+          <div class="grid-select-2">
+            <!-- Main Character Name -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="character_name" class="form-label">
+                  Character Name <span class="req">*</span>
+                </label>
+              </div>
+              <input
+                type="text"
+                id="character_name"
+                name="character_name"
+                class="form-control"
+                placeholder="Example: Leo"
+                required
+              />
+              <div class="form-error-msg">Please enter a character name.</div>
+            </div>
+
+            <!-- Setting Dropdown -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="setting_select" class="form-label">
+                  Setting <span class="req">*</span>
+                </label>
+              </div>
+              <select id="setting_select" name="setting" class="form-control">
+                {% for st in settings %}
+                <option value="{{ st }}" {% if st == 'Enchanted Forest' %}selected{% endif %}>{{ st }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <!-- Custom Setting Input (Revealed when 'Custom' selected) -->
+          <div class="form-group custom-setting-wrap" id="custom_setting_wrap">
+            <label for="custom_setting_input" class="form-label">Describe Custom Setting <span class="req">*</span></label>
+            <input
+              type="text"
+              id="custom_setting_input"
+              class="form-control"
+              placeholder="Example: Neo-Cyberpunk Floating Archipelago"
+            />
+            <div class="form-error-msg">Please specify your custom setting.</div>
+          </div>
+
+          <!-- 3. Story Tone Selection -->
+          <div class="form-group">
+            <div class="form-label-row">
+              <label class="form-label">Story Tone <span class="req">*</span></label>
+            </div>
+            <div class="tone-selector-grid">
+              {% for t in tones %}
+              <div
+                class="tone-card {% if t.name == 'Adventure' %}selected{% endif %}"
+                data-tone="{{ t.name }}"
+                title="{{ t.desc }}"
+              >
+                <span class="tone-icon">{{ t.icon }}</span>
+                <span class="tone-name">{{ t.name }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- 4. Art Style Visual Cards -->
+          <div class="form-group">
+            <div class="form-label-row">
+              <label class="form-label">Art Style <span class="req">*</span></label>
+            </div>
+            <div class="style-selector-grid">
+              {% for s in styles %}
+              <div
+                class="style-card {% if s.name == 'Anime' %}selected{% endif %}"
+                data-style="{{ s.name }}"
+                title="{{ s.aesthetic }}"
+              >
+                <div class="style-thumb">
+                  <img src="{{ s.preview_image }}" alt="{{ s.name }}" loading="lazy" />
+                </div>
+                <div class="style-info">
+                  <div class="style-title">{{ s.name }}</div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- 5. Number of Panels -->
+          <div class="form-group">
+            <div class="form-label-row">
+              <label class="form-label">Number of Panels</label>
+            </div>
+            <div class="panel-count-row">
+              <div class="panel-pill" data-panels="4">4 Panels</div>
+              <div class="panel-pill selected" data-panels="5">
+                5 Panels
+                <span class="rec-tag">Recommended</span>
+              </div>
+              <div class="panel-pill" data-panels="6">6 Panels</div>
+              <div class="panel-pill" data-panels="8">8 Panels</div>
+            </div>
+          </div>
+
+          <!-- Utilities: Surprise Me & Clear -->
+          <div class="form-util-row">
+            <button type="button" class="btn btn-secondary text-btn" id="btn-surprise-me">
+              🎲 Surprise Me
+            </button>
+            <button type="button" class="btn btn-secondary text-btn" id="btn-clear-all">
+              Clear All
+            </button>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="submit-btn-wrap">
+            <button type="submit" class="btn btn-primary btn-generate-main" id="btn-generate-main">
+              <span>✨</span> Generate My Comic
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: Live Comic Creation Preview / Status -->
+      <div class="live-preview-card">
+        <div class="preview-header-row">
+          <div class="preview-title">Live Studio Preview</div>
+          <span class="badge badge-yellow">LIVE SPECS</span>
+        </div>
+
+        <div class="live-tags-wrap">
+          <span class="live-tag">Character: <strong id="live-tag-char">Hero</strong></span>
+          <span class="live-tag">Setting: <strong id="live-tag-setting">Enchanted Forest</strong></span>
+          <span class="live-tag">Tone: <strong id="live-tag-tone">Adventure</strong></span>
+          <span class="live-tag">Style: <strong id="live-tag-style">Anime</strong></span>
+          <span class="live-tag">Panels: <strong id="live-tag-panels">5 Panels</strong></span>
+        </div>
+
+        <div class="preview-mockup-frame">
+          <div class="preview-panel-slot" id="live-preview-slot">
+            <img src="{{ styles[0].preview_image }}" alt="Style Preview" />
+          </div>
+          <div class="preview-speech-demo" id="live-speech-demo">
+            <strong style="color: #2563EB;">HERO:</strong> "The journey begins here!"
+          </div>
+        </div>
+
+        <ul class="preview-outline-steps">
+          <li><span class="dot"></span> 5-panel sequential narrative generation</li>
+          <li><span class="dot"></span> Character-voiced comic dialogue & captions</li>
+          <li><span class="dot"></span> High-resolution AI illustrations per scene</li>
+          <li><span class="dot"></span> Single-click PDF export workflow</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     AI GENERATION MODAL (FULL EXPERIENCE)
+     ========================================== -->
+<div class="generation-overlay" id="generation-overlay" role="dialog" aria-modal="true">
+  <div class="generation-modal-card">
+    <div class="gen-loader-art">
+      <div class="loader-comic-panel">💥</div>
+    </div>
+
+    <h2 class="gen-title">Creating Your Comic...</h2>
+    <p class="gen-subtext">This may take a moment while the AI brings your story to life.</p>
+
+    <!-- Animated Progress Bar -->
+    <div class="gen-progress-container">
+      <div class="gen-progress-bar-bg">
+        <div class="gen-progress-bar-fill" id="gen-percent-fill" style="width: 15%;"></div>
+      </div>
+      <div class="gen-percent-row">
+        <span class="stage-note" id="gen-stage-note">Understanding your story...</span>
+        <span class="percent-label" id="gen-percent-text">15%</span>
+      </div>
+    </div>
+
+    <!-- Stage Checklist -->
+    <ul class="gen-stages-list" id="gen-stages-list">
+      <li class="stage-item active">
+        <span class="stage-icon">&rarr;</span>
+        <span>Understanding your story</span>
+      </li>
+      <li class="stage-item">
+        <span class="stage-icon">&cir;</span>
+        <span>Building the 5-panel outline</span>
+      </li>
+      <li class="stage-item">
+        <span class="stage-icon">&cir;</span>
+        <span>Writing narration and dialogue</span>
+      </li>
+      <li class="stage-item">
+        <span class="stage-icon">&cir;</span>
+        <span>Creating panel illustrations</span>
+      </li>
+      <li class="stage-item">
+        <span class="stage-icon">&cir;</span>
+        <span>Building your comic</span>
+      </li>
+      <li class="stage-item">
+        <span class="stage-icon">&cir;</span>
+        <span>Preparing PDF</span>
+      </li>
+    </ul>
+
+    <p class="gen-reassure-note">Synthesizing narrative beats, expressive speech balloons, and stylized panel frames.</p>
+  </div>
+</div>
+
+<!-- ==========================================
+     COMIC PREVIEW SECTION
+     ========================================== -->
+<section class="preview-section" id="preview-section">
+  <div class="container">
+    <div class="preview-top-bar">
+      <div class="preview-heading-wrap">
+        <span class="badge badge-yellow" style="margin-bottom: 8px;">GENERATION COMPLETE</span>
+        <h2 id="preview-comic-title">Your Comic Is Ready!</h2>
+        <p id="preview-comic-subtitle">Review your story before exporting it.</p>
+      </div>
+
+      <div class="preview-actions-group">
+        <button class="btn btn-primary" id="btn-download-pdf">
+          <span>📥</span> Download PDF
+        </button>
+        <button class="btn btn-secondary" id="btn-preview-pdf">
+          <span>👁️</span> Preview PDF
+        </button>
+        <button class="btn btn-secondary" id="btn-regenerate-all">
+          <span>🔄</span> Regenerate
+        </button>
+        <button class="btn btn-secondary" id="btn-new-comic">
+          <span>✍️</span> Create Another Comic
+        </button>
+        <button class="btn btn-outline btn-icon-only" id="btn-share-comic" title="Share Comic">
+          🔗
+        </button>
+      </div>
+    </div>
+
+    <!-- Comic Reader Layout -->
+    <div class="comic-reader-layout">
+      <!-- Story Information Sidebar -->
+      <aside class="story-info-sidebar">
+        <div class="sidebar-title">Comic Details</div>
+        <div class="sidebar-meta-list">
+          <div class="meta-item">
+            <span class="meta-label">Character</span>
+            <span class="meta-value" id="sidebar-char">Leo</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Setting</span>
+            <span class="meta-value" id="sidebar-setting">Enchanted Forest</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Tone</span>
+            <span class="meta-value" id="sidebar-tone">Adventure</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Art Style</span>
+            <span class="meta-value" id="sidebar-style">Anime</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Panels</span>
+            <span class="meta-value" id="sidebar-panels">5</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Engine</span>
+            <span class="badge badge-yellow" id="sidebar-source">AI Powered</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Sequential Panels Grid -->
+      <div class="panels-stream-grid" id="comic-panels-container">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     EDIT PANEL TEXT MODAL OVERLAY
+     ========================================== -->
+<div class="edit-modal-overlay" id="edit-modal-overlay" role="dialog" aria-modal="true">
+  <div class="edit-modal-card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <h3 style="font-size: 1.5rem; color: var(--comic-yellow);" id="edit-panel-number">Edit Panel Text</h3>
+      <span class="badge badge-yellow">LIVE CUSTOMIZER</span>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Narration Caption</label>
+      <textarea id="edit-caption-input" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Character Dialogue (e.g. LEO: "...")</label>
+      <input type="text" id="edit-dialogue-input" class="form-control" />
+    </div>
+
+    <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+      <button type="button" class="btn btn-secondary" id="btn-cancel-panel-edit">Cancel</button>
+      <button type="button" class="btn btn-primary" id="btn-save-panel-edit">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================
+     EXPORT SUCCESS MODAL OVERLAY
+     ========================================== -->
+<div class="success-overlay" id="success-overlay" role="dialog" aria-modal="true">
+  <div class="success-modal-card">
+    <div class="success-stamp-icon">✓</div>
+    <span class="badge badge-yellow" style="margin-bottom: 12px;">EXPORT COMPLETE</span>
+    <h2 class="success-title">Your Comic Is Ready!</h2>
+    <p class="success-desc">
+      "<span id="success-comic-title">Your AI-powered comic</span>" has been successfully generated and formatted as a high-resolution PDF.
+    </p>
+
+    <div class="success-buttons-wrap">
+      <button class="btn btn-primary" id="btn-success-download-again" style="padding: 14px;">
+        <span>📥</span> Download PDF Again
+      </button>
+      <button class="btn btn-secondary" id="btn-success-new-comic" style="padding: 14px;">
+        <span>✍️</span> Create Another Comic
+      </button>
+      <button class="btn btn-outline" id="btn-success-back-preview">
+        Back to Preview
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================
+     HOW IT WORKS SECTION
+     ========================================== -->
+<section class="how-it-works-section" id="how-it-works">
+  <div class="container">
+    <div class="section-title-wrap">
+      <span class="badge badge-yellow" style="margin-bottom: 12px;">THE AI PIPELINE</span>
+      <h2>How It Works</h2>
+      <p>Transforming your brief imagination into an illustrated, dialogue-rich comic book is as simple as 4 steps.</p>
+    </div>
+
+    <div class="steps-timeline-grid">
+      <div class="step-card">
+        <span class="step-num-badge">01</span>
+        <h3 class="step-title">Describe Your Idea</h3>
+        <p class="step-desc">Tell ComicCraft what story you want to create, name your protagonist, and select your setting.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num-badge">02</span>
+        <h3 class="step-title">AI Builds Your Story</h3>
+        <p class="step-desc">AI analyzes your prompt and crafts the 5-panel narrative outline, dramatic voiceover captions, and character dialogue.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num-badge">03</span>
+        <h3 class="step-title">AI Creates Your Artwork</h3>
+        <p class="step-desc">Each panel receives a tailored comic illustration matching your chosen art style—from anime to retro pixel art.</p>
+      </div>
+
+      <div class="step-card">
+        <span class="step-num-badge">04</span>
+        <h3 class="step-title">Download Your Comic</h3>
+        <p class="step-desc">Review panels, customize text if desired, and export your finished comic as a print-ready professional PDF.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     FEATURES SECTION
+     ========================================== -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-title-wrap">
+      <span class="badge badge-purple" style="margin-bottom: 12px;">STUDIO CAPABILITIES</span>
+      <h2>Powerful Features</h2>
+      <p>Everything you need to turn raw creative concepts into compelling multi-panel stories.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-box">🧠</div>
+        <h3 class="feature-title">AI Story Generation</h3>
+        <p class="feature-desc">Generate structured, dramatic comic outlines from simple prompts with intelligent character arcs.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">💬</div>
+        <h3 class="feature-title">Character Dialogue</h3>
+        <p class="feature-desc">Create witty, emotional, or heroic dialogue with distinctive character voices and narrator voiceovers.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">🎨</div>
+        <h3 class="feature-title">AI Illustrations</h3>
+        <p class="feature-desc">Generate visual artwork for every panel with dynamic action poses, atmospheric lighting, and scene framing.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">🎭</div>
+        <h3 class="feature-title">Multiple Art Styles</h3>
+        <p class="feature-desc">Choose from Anime, American Comic Book, Cartoon, Pixel Art, Realistic Graphic Novel, Manga, and High Fantasy.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">📖</div>
+        <h3 class="feature-title">Comic Preview</h3>
+        <p class="feature-desc">Review your complete story panel-by-panel, edit lines on the fly, or regenerate individual scenes.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon-box">📄</div>
+        <h3 class="feature-title">PDF Export</h3>
+        <p class="feature-desc">Download the finished comic as a formatted PDF with comic title banners, speech bubbles, and page numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     SAMPLE COMICS SECTION ("MADE WITH COMICCRAFT")
+     ========================================== -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-title-wrap">
+      <span class="badge badge-yellow" style="margin-bottom: 12px;">SHOWCASE GALLERY</span>
+      <h2>Made With ComicCraft</h2>
+      <p>Explore stories crafted by users across various genres and visual art styles.</p>
+    </div>
+
+    <div class="gallery-grid">
+      {% for s in samples %}
+      <div class="sample-card">
+        <div class="sample-cover-wrap">
+          <div class="sample-badge-tag">{{ s.badge }}</div>
+          <svg viewBox="0 0 400 180" width="100%" height="100%">
+            <rect width="400" height="180" fill="#151821"/>
+            <circle cx="200" cy="90" r="50" fill="var(--comic-yellow)" opacity="0.2"/>
+            <text x="50%" y="54%" font-size="48" text-anchor="middle" dominant-baseline="middle">{{ s.icon }}</text>
+          </svg>
+        </div>
+        <div class="sample-body">
+          <h3 class="sample-title">{{ s.title }}</h3>
+          <p class="sample-summary">{{ s.summary }}</p>
+          <div class="sample-footer-btn">
+            <button class="btn btn-secondary btn-view-sample" data-sample-id="{{ s.id }}" style="width: 100%;">
+              View Comic
+            </button>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================
+     ABOUT SECTION ("AI MEETS STORYTELLING")
+     ========================================== -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-card">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="badge badge-yellow" style="margin-bottom: 12px;">ORIGINAL ARCHITECTURE</span>
+          <h2>AI Meets Storytelling</h2>
+          <p>
+            ComicCraft combines generative AI storytelling and visual image synthesis to empower anyone to craft complete, illustrated multi-panel comics without requiring professional drawing skills.
+          </p>
+          <p>
+            The production architecture integrates a high-performance FastAPI server with Gemini models for structured outlines, detailed character dialogue, Stable Diffusion for comic panels, and FPDF for document compilation.
+          </p>
+
+          <div class="tech-stack-strip">
+            <span class="tech-tag">⚡ FastAPI Backend</span>
+            <span class="tech-tag">🎨 HTML / CSS / Jinja2</span>
+            <span class="tech-tag">🧠 Gemini Flash & Pro</span>
+            <span class="tech-tag">🖼️ Stable Diffusion SDXL</span>
+            <span class="tech-tag">📄 FPDF Engine</span>
+          </div>
+        </div>
+
+        <div class="about-graphic-box">
+          <div style="font-family: var(--font-comic); font-size: 1.25rem; color: var(--comic-yellow); margin-bottom: 16px;">
+            PIPELINE BLUEPRINT
+          </div>
+          <div class="architecture-step">
+            <span class="arch-icon">1️⃣</span>
+            <span><strong>User Input:</strong> Prompt, Character, Setting, Tone, Style</span>
+          </div>
+          <div class="architecture-step">
+            <span class="arch-icon">2️⃣</span>
+            <span><strong>Gemini Flash:</strong> 5-Panel Structured Outline</span>
+          </div>
+          <div class="architecture-step">
+            <span class="arch-icon">3️⃣</span>
+            <span><strong>Gemini Pro:</strong> Narration Voiceover & Character Dialogue</span>
+          </div>
+          <div class="architecture-step">
+            <span class="arch-icon">4️⃣</span>
+            <span><strong>Stable Diffusion:</strong> High-Resolution Comic Panels</span>
+          </div>
+          <div class="architecture-step">
+            <span class="arch-icon">5️⃣</span>
+            <span><strong>FPDF Studio:</strong> Multi-page Comic Book PDF Export</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
